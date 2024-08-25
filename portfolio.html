@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Nisha Sao </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" >About </a></li>
+                <li><a href="#experience" >Experience </a></li>
+                <li><a href="#projects" >Projects </a></li>
+                <li><a href="#contact" >Contact </a></li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+
+    <nav id="hamburger-nav">
+        <div class="logo">Nisha Sao</div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-icon">  
+                <span></span>  <!-- lines of hamburger menu  -->
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about"onclick="toggleMenu()" >About </a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience </a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects </a></li>
+                <li><a href="#contact"onclick="toggleMenu()" >Contact </a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="profile">
+
+        <div class="section_pic_container" >
+             <img id="image" src="./assets/me.png" alt="Nisha Sao Profile Picture"/> 
+            <!-- <img src="./assets/finallll.png"id="image" alt="Nisha Sao Profile Picture"/> -->
+            <!-- <img id="image" src="./assets/longbg_grey.png" alt="Nisha Sao Profile Picture"/> -->
+        </div>
+
+
+        <div class="section_text">
+
+            <p class="section_text_p1">Hello. I'm </p>
+            <h1 class="title">Nisha Sao</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+
+
+            <div class="btn_container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info </button>
+            </div>
+
+
+            <div id="socials_container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/nisha-sao-9054b2310/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/saonisha'" />
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <section id="about">
+ <!-- section has 4 things a PARAGRAPH, a HEADING, a DIV(section_container) and a IMG(arrow) -->
+        <p class="section_text_p1"> Get to Know More</p>
+        <h1 class="title">About Me</h1>
+
+        <div class="section_container">
+            <div class="section_pic_container" id="about_image">
+                <!-- <img src="./assets/finallll.png" alt="Profile Picture" class="about_pic"/> -->
+                <!-- <img src="./assets/logoooo~2.png" alt="Profile Picture" class="about_pic"/> -->
+
+                 <!-- MERN STACK -->
+                <!-- <img src="./assets/LOGOS/1174949_js_react js_logo_react_react native_icon.png" class="about_pic" alt="react" style="height:50px; width:50px ;position:absolute ; top:150px; left:60px; object-fit:contain"/>
+                <img src="./assets/LOGOS/javascript-removebg-preview.png" class="about_pic" alt="JAVASCRIPT" style="height:50px; width:50px ;position:absolute ; top:110px; left:150px; object-fit:contain"/>
+                <img src="./assets/LOGOS/nodebgremoved.png"class="about_pic"  alt="NODE JS" style="height:77px;width:77px;position:absolute ; top:130px; left:230px;object-fit: contain;"/>
+                <img src="./assets/LOGOS/html bg removed.png" class="about_pic" alt="HTML" style="height:40px; width:40px ;position:absolute ; top:85px; left:90px; object-fit:contain"/>
+                <img src="./assets/LOGOS/cssbgremoved.png" class="about_pic" alt="CSS"  style="height:66px; width:66px ;position:absolute ; top:70px; left:210px; object-fit:contain"/>
+                <img src="./assets/LOGOS/expressbgremoved.png"class="about_pic"  alt="EXPRESS JS"  style="height:80px; width:80px ;position:absolute ; top:210px; left:50px; object-fit:contain"/>
+                <img src="./assets/LOGOS/GitHub-Logo.png" class="about_pic" alt="GitHub"  style="height:77px; width:77px ;position:absolute ; top:170px; left:140px; object-fit:contain"/>
+                <img src="./assets/LOGOS/gitbgremoved.png"class="about_pic"  alt="GIT" style="height:40px; width:40px ;position:absolute ; top:220px; left:240px; object-fit:contain"/>
+                <img src="./assets/LOGOS/bootstrapbgremoved.png" class="about_pic" alt="Bootstrap"  style="height:60px; width:60px ;position:absolute ; top:260px; left:150px; object-fit:contain"/>
+                <img src="./assets/LOGOS/mongo-removebg-preview.png"class="about_pic"  alt="Mongo"  style="height:60px; width:60px ;position:absolute ; top:30px; left:145px; object-fit:contain"/> -->
+
+
+
+                <!-- FRONT END DEVELOPER -->
+                <img src="./assets/LOGOS/html bg removed.png" class="about_pic" alt="HTML" style="height:50px; width:50px ;position:absolute ; top:60px; left:90px; object-fit:contain"/>
+                <img src="./assets/LOGOS/cssbgremoved.png" class="about_pic" alt="CSS"  style="height:76px; width:76px ;position:absolute ; top:45px; left:210px; object-fit:contain"/>
+                <img src="./assets/LOGOS/javascript-removebg-preview.png" class="about_pic" alt="JAVASCRIPT" style="height:52px; width:55px ;position:absolute ; top:120px; left:150px; object-fit:contain"/>
+                <img src="./assets/LOGOS/bootstrapbgremoved.png" class="about_pic" alt="Bootstrap"  style="height:70px; width:70px ;position:absolute ; top:240px; left:140px; object-fit:contain"/>
+                <img src="./assets/LOGOS/gitbgremoved.png"class="about_pic"  alt="GIT" style="height:50px; width:50px ;position:absolute ; top:170px; left:230px; object-fit:contain"/>
+                <img src="./assets/LOGOS/GitHub-Logo.png" class="about_pic" alt="GitHub"  style="height:87px; width:87px ;position:absolute ; top:150px; left:60px; object-fit:contain"/>
+
+
+            </div>
+
+            <div class="about_details_container">
+                <!-- about_details_containers has two things details_container and desc_container -->
+                <div class="about_containers">
+
+                    <div class="details_container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>3 months <br>Frontend Development</p>
+                    </div>
+
+                    <div class="details_container">
+                        <img src="./assets/experience.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>BCA (Bachleor's Degree)
+                            <!-- -Bilaspur University (2019-2022) -->
+                            <br> MCA (Master's Degree)
+                            <!-- -JNU(2023-2025) -->
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="desc_container">
+                <p>I am currently pursuing my Master of Computer Applications (MCA) at Jawaharlal Nehru University, where I have developed a strong passion for front-end development. I enjoy creating visually appealing and user-friendly websites using modern web technologies. With a keen eye for design and a commitment to writing clean, efficient code, I strive to deliver seamless and engaging user experiences. I am always eager to learn and grow in the field of web development, and I look forward to contributing my skills and creativity to exciting new projects.</p>
+                </div>
+
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#experience'"  />
+
+    </section>
+
+
+    <section id="experience">
+
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="exp_details_cont"> 
+            <!-- exp_details_cont has only 1 div inside it -->
+            <div class="about_details_containers">
+
+                <!-- about_details_container has only 1 div inside it i.e about_containers -->
+                <div class="about_containers">
+
+                    <!-- about_containers has 2 details_containers inside it -->
+
+                    <!-- 1ST DETAILS CONTAINER -->
+                    <div class="details_containers">
+
+                        <!-- details_containers has 2 elements inside it  -->
+                        <!-- 1. exp_subtitle 
+                        2.article_container - has <articles> tag -->
+
+                        <h2 class="exp_subtitle">Frontend Development</h2>
+                        <div class="article_container">
+                            <!-- ARTICLE 1 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+
+                             <!-- ARTICLE 2 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+
+                             <!-- ARTICLE 3 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>JAVASCRIPT</h3>
+                                    <p>INTERMEDIATE</p>
+                                </div>
+                            </article>
+
+                             <!-- ARTICLE 4 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>WORDPRESS</h3>
+                                    <p>BEGINNER</p>
+                                </div>
+                            </article>
+
+                             <!-- ARTICLE 5 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>BOOTSTRAP</h3>
+                                    <p>BEGINNER</p>
+                                </div>
+                            </article>
+
+                              <!-- ARTICLE 6 -->
+                              <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>REACT</h3>
+                                    <p>BASIC</p>
+                                </div>
+                            </article>
+
+                            
+
+
+                        </div>
+                        
+                    </div>
+
+                    <!-- 2ND DETAILS CONTAINER -->
+                    <div class="details_containers">
+
+                        <h2 class="exp_subtitle">Backend Development</h2>
+                        <div class="article_container">
+
+                            <!-- ARTICLE 1 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>SQL</h3>
+                                    <p>BASIC</p>
+                                </div>
+                            </article>
+
+                            <!-- ARTICLE 2 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>NODE JS</h3>
+                                    <p>INTERMEDIATE</p>
+                                </div>
+                            </article>
+
+                            <!-- ARTICLE 3 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>EXPRESS JS</h3>
+                                    <p>BASIC</p>
+                                </div>
+                            </article>
+
+                            <!-- ARTICLE 4 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>GIT</h3>
+                                    <p>INTERMEDIATE</p>
+                                </div>
+                            </article>
+
+                            <!-- ARTICLE 5 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>Mongo Db</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+
+                            <!-- ARTICLE 5 -->
+                            <article>
+                                <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                                <div>
+                                    <h3>Next js</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+
+                           
+
+                          
+
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#projects'"  />
+
+
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="exp_details_cont">
+
+            <div class="about_containers">
+
+                 <!--    has 3 divs -->
+                <div class="details_containers color_container">
+
+                    <div class="article_container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                    </div>
+                    
+                    <h2 class="exp-subtitle project-title">Project One</h2>
+                    <div class="btn_container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saonisha'" >
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saonisha'" >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details_containers color_container">
+                    <div class="article_container">
+                        <img src="./assets/project-2.png" alt="Project 1" class="project-img"/>
+
+
+                    </div>
+                    <h2 class="exp-subtitle project-title">Project One</h2>
+                    <div class="btn_container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saonisha'" >
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saonisha'" >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details_containers color_container">
+                    <div class="article_container">
+                        <img src="./assets/project-3.png" alt="Project 1" class="project-img"/>
+
+
+                    </div>
+                    <h2 class="exp-subtitle project-title">Project One</h2>
+                    <div class="btn_container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saonisha'" >
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saonisha'" >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        
+
+        </div>
+
+        <img src="assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#projects'"  />
+
+    </section>
+
+
+    <section id="contact">
+
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+
+        <div class="contact_info_container">
+
+            <!-- 1st contact_info_container -->
+            <div class="contact_info"> 
+                <img src="./assets/email.png"  alt="Email icon" class=" icon email-icon contact-icon"/>
+                <p><a href="saonisha7999@gmail.com" > saonisha7999@gmail.com</a></p>
+            </div>
+            <!-- 1st contact_info_container -->
+            <div class="contact_info"> 
+                <img src="./assets/linkedin.png"  alt="Linkedln icon" class=" icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/nisha-sao-9054b2310/" > LinkedIn </a></p>
+
+            </div>
+            
+
+        </div>
+    
+        
+    </section>
+
+
+    <footer>
+        <nav>
+            <div class="nav_links_container">
+                <ul class="nav-links">
+                    <li><a href="#about" >About </a></li>
+                    <li><a href="#experience" >Experience </a></li>
+                    <li><a href="#projects" >Projects </a></li>
+                    <li><a href="#contact" >Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Nisha Sao. All Rights Reserved</p>
+    </footer>
+
+    <p class="paragraph">i want to be single again</p>
+
+
+
+    <script src="portfolio.js"></script>
+</body>
+</html>

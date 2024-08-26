@@ -50,13 +50,17 @@
     <section id="profile">
 
         <div class="section_pic_container" >
-             <img id="image" src="./assets/me.png" alt="Nisha Sao Profile Picture"/> 
-            <!-- <img src="./assets/finallll.png"id="image" alt="Nisha Sao Profile Picture"/> -->
+            <!-- <img id="image" src="./assets/me.png" alt="Nisha Sao Profile Picture"/>  -->
+            <img src="./assets/finalllll.png"id="image" alt="Nisha Sao Profile Picture"/>
             <!-- <img id="image" src="./assets/longbg_grey.png" alt="Nisha Sao Profile Picture"/> -->
+            <!-- <img id="image" src="./assets/mefinal.png" alt="Nisha Sao Profile Picture"/> -->
+
         </div>
 
 
         <div class="section_text">
+
+            <!-- has 4 elements two paragraphs a heading and 2 divs -->
 
             <p class="section_text_p1">Hello. I'm </p>
             <h1 class="title">Nisha Sao</h1>
@@ -65,7 +69,7 @@
 
             <div class="btn_container">
                 <button class="btn btn-color-1" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
-                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info </button>
+                <button class="btn btn-color-2" onclick="location.href='#contact'">Contact Info </button>
             </div>
 
 
@@ -144,7 +148,7 @@
 
             </div>
         </div>
-        <img src="assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#experience'"  />
+        <img src="assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='#experience'"  />
 
     </section>
 
@@ -152,7 +156,7 @@
     <section id="experience">
 
         <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title">Skills</h1>
         <div class="exp_details_cont"> 
             <!-- exp_details_cont has only 1 div inside it -->
             <div class="about_details_containers">
@@ -275,22 +279,22 @@
                             </article>
 
                             <!-- ARTICLE 5 -->
-                            <article>
+                            <!-- <article>
                                 <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
                                 <div>
                                     <h3>Mongo Db</h3>
                                     <p>Basic</p>
                                 </div>
-                            </article>
+                            </article> -->
 
                             <!-- ARTICLE 5 -->
-                            <article>
+                            <!-- <article>
                                 <img  src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
                                 <div>
                                     <h3>Next js</h3>
                                     <p>Basic</p>
                                 </div>
-                            </article>
+                            </article> -->
 
                            
 
@@ -305,7 +309,7 @@
 
             </div>
         </div>
-        <img src="assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#projects'"  />
+        <img src="assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='#projects'"  />
 
 
     </section>
@@ -313,18 +317,38 @@
     <section id="projects">
         <p class="section_text_p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
-        <div class="exp_details_cont">
+        
 
             <div class="about_containers">
 
-                 <!--    has 3 divs -->
-                <div class="details_containers color_container">
+                 <!--    has 3 divs  named "details_containers color_container"-->
+                <div class="color_container">
 
-                    <div class="article_container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                    <!-- has 3 elements : article_container ,h2 and btn-container -->
+                    <div class="project_img_container">
+                        <img src="./assets/simons.png" alt="Project 1" class="project-img"/>
                     </div>
                     
-                    <h2 class="exp-subtitle project-title">Project One</h2>
+                    <h2 class="exp-subtitle project-title">Interactive Simon Says Game</h2>
+
+                    <div class="btn_container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saonisha/SIMON-GAME.git'" >
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://saonisha.github.io/SIMON-GAME/'" >
+                            Live Demo
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="color_container">
+                    <div class="project_img_container">
+                        <img src="./assets/project2.png" alt="Project 1" class="project-img"/>
+
+
+                    </div>
+                    <h2 class="exp-subtitle project-title">Responsive Portfolio</h2>
                     <div class="btn_container">
                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saonisha'" >
                             Github
@@ -335,24 +359,7 @@
                     </div>
                 </div>
 
-                <div class="details_containers color_container">
-                    <div class="article_container">
-                        <img src="./assets/project-2.png" alt="Project 1" class="project-img"/>
-
-
-                    </div>
-                    <h2 class="exp-subtitle project-title">Project One</h2>
-                    <div class="btn_container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saonisha'" >
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/saonisha'" >
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-
-                <div class="details_containers color_container">
+                <!-- <div class="details_containers color_container">
                     <div class="article_container">
                         <img src="./assets/project-3.png" alt="Project 1" class="project-img"/>
 
@@ -367,14 +374,14 @@
                             Live Demo
                         </button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         
 
-        </div>
+        
 
-        <img src="assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#projects'"  />
+        <img src="assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='#contact'"  />
 
     </section>
 
@@ -388,10 +395,11 @@
 
             <!-- 1st contact_info_container -->
             <div class="contact_info"> 
+                <!-- has two elements an image and a para -->
                 <img src="./assets/email.png"  alt="Email icon" class=" icon email-icon contact-icon"/>
                 <p><a href="saonisha7999@gmail.com" > saonisha7999@gmail.com</a></p>
             </div>
-            <!-- 1st contact_info_container -->
+            <!-- 2nd contact_info_container -->
             <div class="contact_info"> 
                 <img src="./assets/linkedin.png"  alt="Linkedln icon" class=" icon contact-icon"/>
                 <p><a href="https://www.linkedin.com/in/nisha-sao-9054b2310/" > LinkedIn </a></p>
@@ -401,7 +409,7 @@
 
         </div>
     
-        
+    
     </section>
 
 
@@ -419,7 +427,7 @@
         <p>Copyright &#169; 2024 Nisha Sao. All Rights Reserved</p>
     </footer>
 
-    <p class="paragraph">i want to be single again</p>
+    <!-- <p class="paragraph">i want to be single again</p> -->
 
 
 

@@ -1,17 +1,4 @@
-@media screen and (max-width:1400px){
-    /* this code means that when screen size is lower than 1200px 
-    desktop nav will disappear */
-    
-    #desktop-nav{
-        display:none;
-    }
-    #hamburger-nav{
-        display:flex;
-    }
-}
-
-
-@media screen and (max-width: 1400px) {
+  /* @media screen and (max-width: 1400px) {
 
     #profile {
       height: 83vh;
@@ -26,17 +13,25 @@
     #projects {
       height: fit-content;
     }
-  }
-  
-  @media screen and (max-width: 1200px) {
+  } */
 
-    #desktop-nav {
-      display: none;
+
+
+  @media screen and (max-width:1200px){
+    /* this code means that when screen size is lower than 1200px 
+    desktop nav will disappear */
+    
+    #desktop-nav{
+        display:none;
     }
 
-    #hamburger-nav {
-      display: flex;
+     #hamburger-nav{
+        display:flex;
     }
+ 
+    /* .nav-links{
+      display:none;
+    } */
 
     #experience,
     .exp_details_container {
@@ -51,28 +46,63 @@
     .arrow {
       display: none;
     }
-
-    section,
+ 
+    section{
+      height:96vh;
+    }
+     section,
     .section_container {
       height: fit-content;
-    }
+    } 
 
     section {
       margin: 0 5%;
     }
 
     .section_pic_container {
+      /* border:2px solid yellow; */
       width: 275px;
       height: 275px;
       margin: 0 auto 2rem;
+
     }
 
-    .about_containers {
-      margin-top: 0;
+    #profile .section_pic_container img{
+      width: 275px;
+      height: 275px;
     }
-  }
+     .about_containers {
+      margin-top: 0;
+      
+    } 
+    
+    .section_text {
+      
+      font-size:smaller; 
+      /* isse no fark Y ?????*/
+      
+    } 
+
+    .section_text .section_text_p1{
+      margin-top:10vh ;
+      /* font-size:small; */
+    }
+
+    /* .section_text .section_text_p2{
+      
+      font-size:small;
+    }
+
+    .section_text .title{
+    
+      font-size:small;
+    } */
+
+
+    
+  } 
   
-  @media screen and (max-width: 600px) {
+   @media screen and (max-width: 600px) {
     
     #contact,
     footer {
@@ -101,19 +131,19 @@
 
     .contact_info{
       margin: 0;
-    }
+    } 
 
     .contact_info_container p,
     .nav-links li a {
-      /* font-size: 1rem; */
+      font-size: 1rem;
     }
 
-    .exp_subtitle {
+     .exp_subtitle {
       font-size: 1.25rem;
     }
 
     .logo {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
 
     .nav-links {
@@ -136,8 +166,48 @@
       font-size: 2rem;
     }
 
+
     .desc_container {
       text-align: justify;
     }
-  }
 
+  }  
+
+
+  /* MEDIA QUERIES WRITTEN BY ME */
+
+  @media screen and (max-width:600px){
+    /* this code means that when screen size is lower than 600px 
+    desktop nav will disappear */
+    
+    /* body{
+      height:100vh;
+      width:100vw;
+    } */
+
+    /* #desktop-nav{
+        display:none;
+    }
+     #hamburger-nav{
+        display:flex;
+        gap:65vh;
+        height:20vh;
+        border:2px solid black;
+        width:100vw;
+    }
+
+    .logo{
+      font-size:50px;
+    }
+    /* nav{
+      height:30vh;
+      width:250vw;
+    }  */
+
+    /* #profile{
+      border:2px solid black;
+      height:100vh;
+      width:100vw;
+    } */
+
+}
